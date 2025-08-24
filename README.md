@@ -74,10 +74,10 @@ pub fn run(fin_data: FinData) -> FnResult<Output> {
     let labels = fin_data.get_labels();
     
     // Get candlestick data for a specific symbol
-    let candles = fin_data.get_candles("BTCUSD")?;
+    let candles = fin_data.get_candles("symbol_data")?;
     
     // Use decimal precision for calculations
-    let decimal_candles = fin_data.get_candles_decimal("BTCUSD")?;
+    let decimal_candles = fin_data.get_candles_decimal("symbol_data")?;
     
     // Your analysis logic here
     
