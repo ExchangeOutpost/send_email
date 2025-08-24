@@ -1,7 +1,23 @@
 {
-    "function_name": "Rust Function Template",
-    "description": "A template for creating Rust functions",
+    "function_name": "Send email",
+    "description": "Schedules an email to be sent with the provided email address and body.",
     "financial_data_keys": [],
-    "call_arguments_schema": {},
-    "enforce_schemas": false
+    "call_arguments_schema": {
+        "type": "object",
+        "properties": {
+            "email": {
+                "type": "string",
+                "description": "The target email address."
+            },
+            "body": {
+                "type": "string",
+                "description": "The body of the email."
+            }
+        },
+        "required": [
+            "email",
+            "body"
+        ]
+    },
+    "enforce_schemas": true
 }
