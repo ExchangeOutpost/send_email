@@ -136,6 +136,18 @@ schedule_webhook("/webhook", payload);
 ```
 This will send a POST request to the specified webhook URL with the given payload. The base url will be set to the one you configured for webhooks in your Organization settings.
 
+### Sending emails
+
+You can send email notifications by using the `schedule_email` function:
+
+```rust
+use crate::exchange_outpost::schedule_email;
+
+let email_body = "Alert: Price threshold reached!";
+schedule_email("user@example.com", email_body);
+```
+This will send an email to the specified email address with the given body content.
+
 ## Building and Deployment
 
 ### Local Build
