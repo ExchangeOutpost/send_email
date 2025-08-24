@@ -47,8 +47,8 @@ Represents financial candlestick data with:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/ExchangeOutpost/rust_function_base.git
-cd rust_function_base
+git clone https://github.com/ExchangeOutpost/rust-function-template.git
+cd rust-function-template
 ```
 
 2. Install the WebAssembly target:
@@ -145,7 +145,7 @@ cargo build --target wasm32-unknown-unknown --release
 ```
 
 The compiled WASM file will be located at:
-`target/wasm32-unknown-unknown/release/rust_function_base.wasm`
+`target/wasm32-unknown-unknown/release/rust-function-template.wasm`
 
 ### Automated Releases
 
