@@ -159,6 +159,7 @@ To create a release:
 git tag 1.0.0
 git push origin 1.0.0
 ```
+Tags must follow [semantic versioning](https://semver.org/).
 
 ### Testing Your Function
 When pushing to the `master` branch, the CI will automatically build your function and create a preview release named `master`.
